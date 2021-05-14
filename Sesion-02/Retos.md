@@ -6,7 +6,9 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 - ¿Qué artículos incluyen la palabra `Pasta` en su nombre?
 ```sql
-tienda> select * from articulo where nombre like '%pasta%';                                                                                        
+select * from articulo where nombre like '%pasta%';
+```
+```
 +-------------+-----------------------------------+---------+---------+----------+
 | id_articulo | nombre                            | precio  | iva     | cantidad |
 +-------------+-----------------------------------+---------+---------+----------+
@@ -34,7 +36,9 @@ Time: 0.117s
 ```
 - ¿Qué artículos incluyen la palabra `Cannelloni` en su nombre?
 ```sql
-tienda> select * from articulo where nombre like '%Cannelloni%';                                                                                   
+select * from articulo where nombre like '%Cannelloni%';
+```
+```
 +-------------+-----------------------------------+---------+--------+----------+
 | id_articulo | nombre                            | precio  | iva    | cantidad |
 +-------------+-----------------------------------+---------+--------+----------+
@@ -46,7 +50,9 @@ Time: 0.107s
 ```
 - ¿Qué nombres están separados por un guión (`-`) por ejemplo `Puree - Kiwi`?
 ```sql
-tienda> select * from articulo where nombre like '%-%';                                                                                            
+select * from articulo where nombre like '%-%';
+```
+```
 +-------------+-------------------------------------+---------+---------+----------+
 | id_articulo | nombre                              | precio  | iva     | cantidad |
 +-------------+-------------------------------------+---------+---------+----------+
@@ -79,7 +85,9 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 - ¿Cuál es el promedio de salario de los puestos?
 ```sql
-tienda> select AVG(salario) as 'Promedio de salario' from puesto;                                                                                  
+select AVG(salario) as 'Promedio de salario' from puesto;
+```
+```
 +---------------------+
 | Promedio de salario |
 +---------------------+
@@ -90,7 +98,9 @@ Time: 0.075s
 ```
 - ¿Cuántos artículos incluyen la palabra `Pasta` en su nombre?
 ```sql
-tienda> select COUNT(*) from articulo where nombre like '%pasta%';                                                                                 
+select COUNT(*) from articulo where nombre like '%pasta%';
+```
+```
 +----------+
 | COUNT(*) |
 +----------+
@@ -101,7 +111,9 @@ Time: 0.121s
 ```
 - ¿Cuál es el salario mínimo y máximo?
 ```sql
-tienda> select min(salario) as minimo, max(salario) as maximo from puesto;                                                                         
+select min(salario) as minimo, max(salario) as maximo from puesto;
+```
+```
 +----------+----------+
 | minimo   | maximo   |
 +----------+----------+
@@ -112,7 +124,9 @@ Time: 0.082s
 ```
 - ¿Cuál es la suma del salario de los últimos cinco puestos agregados?
 ```sql
-tienda> select sum(salario) as 'Suma de los ultimos 5 salarios' from (select salario from puesto order by id_puesto desc limit 5) as slarios;      
+select sum(salario) as 'Suma de los ultimos 5 salarios' from (select salario from puesto order by id_puesto desc limit 5) as slarios;
+```
+```
 +--------------------------------+
 | Suma de los ultimos 5 salarios |
 +--------------------------------+
@@ -133,7 +147,9 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 - ¿Cuántos registros hay por cada uno de los puestos?
 ```sql
-tienda> select nombre, count(*) from puesto group by nombre;                                                                                       
+select nombre, count(*) from puesto group by nombre;
+```
+```
 +--------------------------------------+----------+
 | nombre                               | count(*) |
 +--------------------------------------+----------+
@@ -155,7 +171,9 @@ tienda> select nombre, count(*) from puesto group by nombre;
 ```
 - ¿Cuánto dinero se paga en total por puesto?
 ```sql
-tienda> select nombre, sum(salario) from puesto group by nombre;                                                                                   
+select nombre, sum(salario) from puesto group by nombre;
+```
+```
 +--------------------------------------+---------------------+
 | nombre                               | sum(salario)        |
 +--------------------------------------+---------------------+
@@ -178,7 +196,9 @@ tienda> select nombre, sum(salario) from puesto group by nombre;
 ```
 - ¿Cuál es el número total de ventas por vendedor?
 ```sql
-tienda> select id_empleado, count(*) as ventas from venta group by id_empleado;                                                                    
+select id_empleado, count(*) as ventas from venta group by id_empleado;
+```
+```
 +-------------+--------+
 | id_empleado | ventas |
 +-------------+--------+
@@ -198,7 +218,9 @@ tienda> select id_empleado, count(*) as ventas from venta group by id_empleado;
 ```
 - ¿Cuál es el número total de ventas por artículo?
 ```sql
-tienda> select id_articulo, count(*) as ventas from venta group by id_articulo;                                                                    
+select id_articulo, count(*) as ventas from venta group by id_articulo;
+```
+```
 +-------------+--------+
 | id_articulo | ventas |
 +-------------+--------+
@@ -228,7 +250,9 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 
 - ¿Cuál es el nombre de los empleados cuyo sueldo es mayor a $10,000?
 ```sql
-tienda> select nombre from empleado e where (select p.salario from puesto p where p.id_puesto = e.id_puesto) > 10000;                              
+select nombre from empleado e where (select p.salario from puesto p where p.id_puesto = e.id_puesto) > 10000;
+```
+```
 +-------------+
 | nombre      |
 +-------------+
@@ -247,7 +271,9 @@ tienda> select nombre from empleado e where (select p.salario from puesto p wher
 ```
 - ¿Cuál es la cantidad mínima y máxima de ventas de cada empleado?
 ```sql
-tienda> select id_empleado, max(cantidad) as MayorCantidad, min(cantidad) as MenorCantidad from (select clave, id_empleado, count(*) as cantidad from venta group by clave, id_empleado) t group by id_empleado                                                                               
+select id_empleado, max(cantidad) as MayorCantidad, min(cantidad) as MenorCantidad from (select clave, id_empleado, count(*) as cantidad from venta group by clave, id_empleado) t group by id_empleado;
+```
+```
 +-------------+---------------+---------------+
 | id_empleado | MayorCantidad | MenorCantidad |
 +-------------+---------------+---------------+
@@ -267,7 +293,9 @@ tienda> select id_empleado, max(cantidad) as MayorCantidad, min(cantidad) as Men
 ```
 - ¿Cuál es el nombre del puesto de cada empleado?
 ```sql
-tienda> select nombre, (select p.nombre from puesto as p where p.id_p
+select nombre, (select p.nombre from puesto as p where p.id_p
+    ```
+    ```
         uesto = empleado.id_puesto) as puesto from empleado;         
 +-------------+--------------------------------------+
 | nombre      | puesto                               |
