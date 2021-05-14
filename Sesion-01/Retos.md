@@ -25,14 +25,14 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 ```sql
 tienda> select nombre from empleado where id_puesto = 4;
 ```
-`
+```
 +--------+
 | nombre |
 +--------+
 | Norrie |
 | Maxy   |
 +--------+
-`
+```
 - ¿Qué puestos tienen un salario mayor a $10,000?
 ```sql
 tienda> select * from puesto where salario > 1000;
