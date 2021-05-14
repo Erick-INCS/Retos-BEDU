@@ -22,7 +22,7 @@ Usando la base de datos `tienda`, muestra la descripción de las tablas `articul
 Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
 
 - ¿Cuál es el nombre de los empleados con el puesto 4?
-```bash`
+```bash
 tienda> select nombre from empleado where id_puesto = 4;                                                                                          
 +--------+
 | nombre |
