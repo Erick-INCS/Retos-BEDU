@@ -293,10 +293,9 @@ select id_empleado, max(cantidad) as MayorCantidad, min(cantidad) as MenorCantid
 ```
 - ¿Cuál es el nombre del puesto de cada empleado?
 ```sql
-select nombre, (select p.nombre from puesto as p where p.id_p
-    ```
-    ```
-        uesto = empleado.id_puesto) as puesto from empleado;         
+select nombre, (select p.nombre from puesto as p where p.id_puesto = empleado.id_puesto) as puesto from empleado;
+```
+```
 +-------------+--------------------------------------+
 | nombre      | puesto                               |
 +-------------+--------------------------------------+
@@ -314,5 +313,4 @@ select nombre, (select p.nombre from puesto as p where p.id_p
 | Crissie     | Help Desk Technician                 |
 ...
 ```
-
 </div>
