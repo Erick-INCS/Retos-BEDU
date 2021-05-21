@@ -9,7 +9,7 @@ En en este repositorio estaran disponibles todos los retos y ejercicios realizad
     - [Ejercicios-Clase02.sql](Sesion-02/Ejercicios-Clase02.sql)<br>
     - [Retos.md](Sesion-02/Retos.md)<br>
 - Sesion-03<br>
-    - [Ejercicios.md](Sesion-03/Ejercicios.md)<br>
+    - [Ejercicios.md](Sesion-03/Ejercicios.sql)<br>
     - [Retos.md](Sesion-03/Retos.md)<br>
 - Sesion-04<br>
     - [Ejercicios.md](Sesion-04/Ejercicios.md)<br>

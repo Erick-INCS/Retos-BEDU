@@ -109,7 +109,7 @@ Time: 0.068s
 
 </div>
 
-# Reto de la sesion 04
+# Ejercicios de la sesion 04
 ```sql
 -- *Para estas consultas usa INNER JOIN*
 -- 1. Obtén la cantidad de productos de cada orden.
