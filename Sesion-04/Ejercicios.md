@@ -2,15 +2,6 @@
 
 ## Ejercicios Sesión 4
 
-### 1. Objetivos :dart:
-- Que el alumno comprenda la estructura de documentos de una base de datos __MongoDB__
-- Que el alumno se familiarice con la notación JSON
-
-### 2. Requisitos :clipboard:
-1. __MongoDB Compass__ iniciado y conectado al servidor de MongoDB
-1. Base de datos __MiNombre__ y Colecciones `users`, `movies` y `ratings` creadas
-
-### 3. Desarrollo :rocket:
 A continuación se realizarán algunas operaciones de agregar, modificar y eliminar un documento JSON en una Colección.
 
 1. Agregar los siguientes registros en formato CSV a la Colección `movies`
@@ -38,20 +29,15 @@ A continuación se realizarán algunas operaciones de agregar, modificar y elimi
      genres:"Drama|Fantasy"
    }
    ```
-   Ahora ir a __MongoDB Compass__ y agregar ambos documentos:
 
-   ![Adicionando campos u objetos](imagenes/adicionando-datos.png)
-
-   Al final presionar el botón __INSERT__
+   ![Insertando los datos](img/01.jpg)
 
    Para poder observar nuestros documentos en la lista hay que realizar un filtro
    ```json
    {id: {$in: ["4000", "4001"]}}
    ```
 
-   ![Documentos en la colección](imagenes/documentos-en-coleccion.png)
-
-1. Modificar el documento con `id=4001` en la Colección `movies` para que contenga la siguiente información:
+2. Modificar el documento con `id=4001` en la Colección `movies` para que contenga la siguiente información:
 
    ```json
    {
