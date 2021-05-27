@@ -82,15 +82,13 @@ values (1, 2, 1, current_timestamp);
 
 2. Importar datos a la colección `movies` desde el archivo `movies.csv`
 
-   Para importar documentos, se usa la opción del menú `Collection > Import Data` que abre un diálogo para seleccionar del tipo de archivo CSV y el archivo mismo.
-   Validar que cada campo tenga nombre y que estén todos los campos, además valida la cantidad de documentos, que en este caso debería de ser 3883.
+[datos importados](img/04.png)
 
 3. Crear la colección `ratings`
 
    Seleccionar la colección y continuar.
 
 4. Importar datos a la colección `ratings` desde el archivo `ratings.csv`
-
-   Para importar usar la opción del menú `Collection > Import Data` que abre un diálogo para seleccionar del tipo de archivo CSV y el archivo mismo.
-
    Validar que cada campo tenga nombre y que estén todos los campos, además valida la cantidad de documentos, que en este caso debería de ser 1000209 documentos.
+
+  [datos importados](img/05.png)

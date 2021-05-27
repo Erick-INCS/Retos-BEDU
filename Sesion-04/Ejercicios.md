@@ -1,5 +1,3 @@
-[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 04`](../Readme.md) > Proyecto
-
 ## Ejercicios Sesión 4
 
 A continuación se realizarán algunas operaciones de agregar, modificar y eliminar un documento JSON en una Colección.
@@ -58,8 +56,4 @@ A continuación se realizarán algunas operaciones de agregar, modificar y elimi
      ]
    }
    ```
-   Luego de presionar el botón __INSERT__ la lista de los dos documentos deberá de ser la siguiente:
-
-   ![Lista de documentos en la colección](imagenes/documentos-en-coleccion-2.png)
-
-[`Anterior`](../Readme.md) | [`Siguiente`](../Readme.md)      
+   ![Documento insertado](img/03.jpg)
