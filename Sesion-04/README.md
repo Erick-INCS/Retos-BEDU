@@ -119,7 +119,7 @@ Time: 0.018s
 1. Usando como base el archivo `ratings.dat`, limpiarlo e importar los datos en la tabla `ratings` creada en el Reto 2.   
 
    > **Importante:** Como podrás notar, este archivo tiene demasiados registros, de manera que es normal que la carga sea muy lenta. Esto es algo muy común cuando nos enfrentamos a la carga de archivos. Si ya lleva mucho tiempo y no finaliza, no te preocupes, puedes cancelar la carga.
-   [Imagen](img/02.png)
+   ![Imagen](img/02.png)
 
 1. Finalmente, añade un registro en cada tabla usando `INSERT INTO`.
 ```sql
@@ -141,7 +141,7 @@ values (1, 2, 1, current_timestamp);
 
 2. Importar datos a la colección `movies` desde el archivo `movies.csv`
 
-[datos importados](img/04.png)
+![datos importados](img/04.png)
 
 3. Crear la colección `ratings`
 
@@ -150,4 +150,4 @@ values (1, 2, 1, current_timestamp);
 4. Importar datos a la colección `ratings` desde el archivo `ratings.csv`
    Validar que cada campo tenga nombre y que estén todos los campos, además valida la cantidad de documentos, que en este caso debería de ser 1000209 documentos.
 
-  [datos importados](img/05.png)
+  ![datos importados](img/05.png)
