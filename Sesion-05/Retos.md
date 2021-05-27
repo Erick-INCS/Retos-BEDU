@@ -1,55 +1,35 @@
-[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 05`](../Readme.md) > `Reto 1`
-	
 ## Reto 1: Colecciones, Documentos y Proyecciones
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart:
-
-- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
-
-### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
-
-### 3. Desarrollo :rocket:
-
 Usando la base de datos `sample_mflix`, proyecta los datos que se solicitan.
 
 - Fecha, nombre y texto de cada comentario.
+![01](img/01.png)
 - Título, elenco y año de cada película.
+![02](img/02.png)
 - Nombre y contraseña de cada usuario.
+![03](img/03.png)
 
 <br/>
 
-[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>
-[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 05`](../Readme.md) > `Reto 2`
-	
 ## Reto 2: Filtros básicos
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart:
-
-- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
-
-### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
-
-### 3. Desarrollo :rocket:
-
 Usando la base de datos `sample_mflix`, agrega proyeccciones, filtros, ordenamientos y límites que permitan contestar las siguientes preguntas:
 
 - ¿Qué comentarios ha hecho Greg Powell?
+![04](img/04.png)
 - ¿Qué comentarios han hecho Greg Powell o Mercedes Tyler?
+![05](img/05.png)
 - ¿Cuál es el máximo número de comentarios en una película?
+![06](img/06.png)
 - ¿Cuál es título de las cinco películas más comentadas?
+![07](img/07.png)
 
 <br/>
-
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md)
 
 </div>
