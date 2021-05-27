@@ -56,4 +56,4 @@ A continuación se realizarán algunas operaciones de agregar, modificar y elimi
      ]
    }
    ```
-   ![Documento insertado](img/03.jpg)
+   ![Documento insertado](img/03.png)
