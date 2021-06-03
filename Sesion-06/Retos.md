@@ -6,57 +6,33 @@ Usando la base de datos `sample_airbnb > listingsAndReviews`, realiza los siguie
 
 ![1.1](img/1.1.png)
 - Propiedades que admitan mascotas.
+
+![1.2](img/1.2.png)
 - Propiedades que no permitan fumadores.
+
+![1.3](img/1.3.png)
 - Propiedades que no permitan fiestas ni fumadores.
+
+![1.4](img/1.4.png)
 
 <br/>
 
-[`Anterior`](../Ejemplo-01/Readme.md) | [`Siguiente`](../Readme.md)
-
 </div>
-[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 06`](../Readme.md) > `Reto 2`
 	
 ## Reto 2: Notación punto y arreglos
 
-<div style="text-align: justify;">
-
-### 1. Objetivos :dart: 
-
-- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
-
-### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
-
-### 3. Desarrollo :rocket:
-
 Usando la colección `sample_airbnb.listingsAndReviews`, agrega un filtro que permita obtener todas las publicaciones que tengan 50 o más comentarios, que la valoración sea mayor o igual a 80, que cuenten con conexión a Internet vía cable y estén ubicada en Brazil.
 
-<br/>
-
-[`Anterior`](../Ejemplo-02/Readme.md) | [`Siguiente`](../Readme.md)
+![2.1](img/2.1.png)
 
 </div>
-[`Introducción a Bases de Datos`](../../README.md) > [`Sesión 06`](../Readme.md) > `Reto 3`
 	
 ## Reto 3: Introducción a las agregaciones
 
 <div style="text-align: justify;">
 
-### 1. Objetivos :dart: 
-
-- Proyectar columnas sobre distintos documentos para repasar algunos conceptos.
-
-### 2. Requisitos :clipboard:
-
-1. MongoDB Compass instalado.
-
-### 3. Desarrollo :rocket:
-
 Usando la colección `sample_airbnb.listingsAndReviews`, mediante el uso de agregaciones, encontrar el número de publicaciones que tienen conexión a Internet, sea desde Wifi o desde cable (Ethernet).
 
+![3.1](img/3.1.png)
 <br/>
-
-[`Anterior`](../Ejemplo-03/Readme.md) | [`Siguiente`](../Readme.md)
-
 </div>
