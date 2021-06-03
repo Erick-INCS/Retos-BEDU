@@ -3,7 +3,6 @@
 Usando la base de datos `sample_airbnb > listingsAndReviews`, realiza los siguientes filtros:
 
 - Propiedades que no permitan fiestas.
-<br>
 
 ![1.1](img/1.1.png)
 - Propiedades que admitan mascotas.
