@@ -52,6 +52,6 @@ Construye un pipeline que genere como resultado estos datos.
 
 Usando el *pipeline* que generaste en el Reto 2, genera la vista correspondiente.
 
-![1.1.1](img/1.1.1.png)
+![1.1](img/1.1.png)
 
 </div>
