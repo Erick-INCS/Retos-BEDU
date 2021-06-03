@@ -1,5 +1,3 @@
-[`Introducción a Bases de Datos`](../Readme.md) > `Sesión 8`
-
 ## Sesión 8: *Query Competition*
 
 <img src="../imagenes/pizarron.png" align="right" height="100" width="100" hspace="10">
