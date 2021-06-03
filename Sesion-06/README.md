@@ -11,6 +11,7 @@ que la valoración sea mayor o igual a 80, que cuenten con conexión a Internet 
 ![Resultado](img/e.1.png)
 
 <br/>
+
 # Retos Sesión 6
 ## Reto 1: Expresiones regulares
 
