@@ -15,7 +15,7 @@ Con base en el ejemplo 1, modifica el agrupamiento para que muestre el costo pro
 Usando las colecciones `comments` y `users`, se requiere conocer el correo y contraseña de cada persona que realizó un comentario.
 Construye un pipeline que genere como resultado estos datos.
 
-####$lookup
+#### $lookup
 ```bjson
 {
   from: 'users',
@@ -24,13 +24,15 @@ Construye un pipeline que genere como resultado estos datos.
   as: 'user'
 }
 ```
-####$addFields
+
+#### $addFields
 ```bjson
 {
   password: {$arrayElemAt: ["$user.password", 0]}
 }
 ```
-####$project
+
+#### $project
 ```bjson
 {
   _id: 0,
@@ -39,7 +41,6 @@ Construye un pipeline que genere como resultado estos datos.
   text: 1
 }
 ```
-
 
 <br/>
 
